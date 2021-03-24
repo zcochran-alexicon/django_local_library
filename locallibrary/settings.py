@@ -29,7 +29,10 @@ SECRET_KEY = 'e!_*y$rlkp+y$(9xei73#l-rq6oqlk@s_xrdu&wn1pfbjc*+u6'
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+    'fast-harbor-83037.herokuapp.com',
+]
 
 
 # Application definition
